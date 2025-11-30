@@ -241,8 +241,6 @@
       const form = e.target;
       const formData = new FormData(form);
       
-      console.log('Submitting to:', form.action);
-      
       try {
         const response = await fetch(form.action, {
           method: 'POST',
@@ -252,21 +250,15 @@
           }
         });
         
-        console.log('Response status:', response.status);
-        const data = await response.json();
-        console.log('Response data:', data);
-        
         if (response.ok) {
           document.getElementById('form-view').style.display = 'none';
           document.getElementById('success-view').style.display = 'block';
           form.reset();
         } else {
-          console.error('Error response:', data);
-          alert('Error sending message: ' + (data.error || 'Please try again.'));
+          alert('Error sending message. Please try again.');
         }
       } catch (error) {
-        console.error('Fetch error:', error);
-        alert('Error sending message. Please check console and try again.');
+        alert('Error sending message. Please try again.');
       }
     });
   </script>
