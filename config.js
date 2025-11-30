@@ -1,0 +1,3 @@
+// Supabase configuration
+export const SUPABASE_URL = 'https://cekzdnaukaofojadvymg.supabase.co';
+export const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNla3pkbmF1a2FvZm9qYWR2eW1nIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ0OTU5MTQsImV4cCI6MjA4MDA3MTkxNH0.UR9JNL6rpy1ZOqBMhHp9vbPzfDvib-FYlK7ymw-QQ8w';

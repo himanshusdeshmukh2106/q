@@ -455,19 +455,40 @@
     </div>
   </div>
 
-  <script>
-    document.getElementById('waitlist-form').addEventListener('submit', function(e) {
+  <script type="module">
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm'
+    import { SUPABASE_URL, SUPABASE_ANON_KEY } from './config.js'
+
+    // Initialize Supabase client
+    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+
+    document.getElementById('waitlist-form').addEventListener('submit', async function(e) {
       e.preventDefault();
       
-      document.getElementById('form-view').style.display = 'none';
-      document.getElementById('success-view').style.display = 'block';
-      
-      console.log('Waitlist submission:', {
-        firstName: document.getElementById('firstName').value,
-        lastName: document.getElementById('lastName').value,
+      const formData = {
+        first_name: document.getElementById('firstName').value,
+        last_name: document.getElementById('lastName').value,
         email: document.getElementById('email').value,
         referral: document.getElementById('referral').value
-      });
+      };
+
+      try {
+        const { data, error } = await supabase
+          .from('waitlist')
+          .insert([formData]);
+
+        if (error) {
+          console.error('Error:', error);
+          alert('Error submitting form. Please try again.');
+        } else {
+          console.log('Success:', data);
+          document.getElementById('form-view').style.display = 'none';
+          document.getElementById('success-view').style.display = 'block';
+        }
+      } catch (err) {
+        console.error('Unexpected error:', err);
+        alert('Error submitting form. Please try again.');
+      }
     });
   </script>
 </body>
