@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+
+<html lang="en" class="dark" style="color-scheme: dark;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><link rel="stylesheet" href="./quatarly_files/7d02db5c3569a927.css" data-precedence="next"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><meta name="theme-color" content="hsl(222deg 47% 6%)"><title>quatarly</title><meta name="description" content="Your AI investment analyst"><meta property="og:title" content="quatarly"><meta property="og:description" content="Your AI investment analyst"><meta property="og:url" content="#"><meta property="og:site_name" content="quatarly"><meta property="og:locale" content="en_US"><meta property="og:image" content="./logo1.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="quatarly - Your AI investment analyst"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="quatarly"><meta name="twitter:description" content="Your AI investment analyst"><meta name="twitter:image" content="./logo1.png"><link rel="shortcut icon" href="./logo.png"><link rel="icon" href="./logo.png" type="image/x-icon" sizes="1024x1024"><link rel="icon" href="./logo.png"><link rel="apple-touch-icon" href="./logo.png"><style type="text/css">:where(html[dir="ltr"]),:where([data-sonner-toaster][dir="ltr"]){--toast-icon-margin-start: -3px;--toast-icon-margin-end: 4px;--toast-svg-margin-start: -1px;--toast-svg-margin-end: 0px;--toast-button-margin-start: auto;--toast-button-margin-end: 0;--toast-close-button-start: 0;--toast-close-button-end: unset;--toast-close-button-transform: translate(-35%, -35%)}:where(html[dir="rtl"]),:where([data-sonner-toaster][dir="rtl"]){--toast-icon-margin-start: 4px;--toast-icon-margin-end: -3px;--toast-svg-margin-start: 0px;--toast-svg-margin-end: -1px;--toast-button-margin-start: 0;--toast-button-margin-end: auto;--toast-close-button-start: unset;--toast-close-button-end: 0;--toast-close-button-transform: translate(35%, -35%)}:where([data-sonner-toaster]){position:fixed;width:var(--width);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;--gray1: hsl(0, 0%, 99%);--gray2: hsl(0, 0%, 97.3%);--gray3: hsl(0, 0%, 95.1%);--gray4: hsl(0, 0%, 93%);--gray5: hsl(0, 0%, 90.9%);--gray6: hsl(0, 0%, 88.7%);--gray7: hsl(0, 0%, 85.8%);--gray8: hsl(0, 0%, 78%);--gray9: hsl(0, 0%, 56.1%);--gray10: hsl(0, 0%, 52.3%);--gray11: hsl(0, 0%, 43.5%);--gray12: hsl(0, 0%, 9%);--border-radius: 8px;box-sizing:border-box;padding:0;margin:0;list-style:none;outline:none;z-index:999999999;transition:transform .4s ease}:where([data-sonner-toaster][data-lifted="true"]){transform:translateY(-10px)}@media (hover: none) and (pointer: coarse){:where([data-sonner-toaster][data-lifted="true"]){transform:none}}:where([data-sonner-toaster][data-x-position="right"]){right:var(--offset-right)}:where([data-sonner-toaster][data-x-position="left"]){left:var(--offset-left)}:where([data-sonner-toaster][data-x-position="center"]){left:50%;transform:translate(-50%)}:where([data-sonner-toaster][data-y-position="top"]){top:var(--offset-top)}:where([data-sonner-toaster][data-y-position="bottom"]){bottom:var(--offset-bottom)}:where([data-sonner-toast]){--y: translateY(100%);--lift-amount: calc(var(--lift) * var(--gap));z-index:var(--z-index);position:absolute;opacity:0;transform:var(--y);filter:blur(0);touch-action:none;transition:transform .4s,opacity .4s,height .4s,box-shadow .2s;box-sizing:border-box;outline:none;overflow-wrap:anywhere}:where([data-sonner-toast][data-styled="true"]){padding:16px;background:var(--normal-bg);border:1px solid var(--normal-border);color:var(--normal-text);border-radius:var(--border-radius);box-shadow:0 4px 12px #0000001a;width:var(--width);font-size:13px;display:flex;align-items:center;gap:6px}:where([data-sonner-toast]:focus-visible){box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}:where([data-sonner-toast][data-y-position="top"]){top:0;--y: translateY(-100%);--lift: 1;--lift-amount: calc(1 * var(--gap))}:where([data-sonner-toast][data-y-position="bottom"]){bottom:0;--y: translateY(100%);--lift: -1;--lift-amount: calc(var(--lift) * var(--gap))}:where([data-sonner-toast]) :where([data-description]){font-weight:400;line-height:1.4;color:inherit}:where([data-sonner-toast]) :where([data-title]){font-weight:500;line-height:1.5;color:inherit}:where([data-sonner-toast]) :where([data-icon]){display:flex;height:16px;width:16px;position:relative;justify-content:flex-start;align-items:center;flex-shrink:0;margin-left:var(--toast-icon-margin-start);margin-right:var(--toast-icon-margin-end)}:where([data-sonner-toast][data-promise="true"]) :where([data-icon])>svg{opacity:0;transform:scale(.8);transform-origin:center;animation:sonner-fade-in .3s ease forwards}:where([data-sonner-toast]) :where([data-icon])>*{flex-shrink:0}:where([data-sonner-toast]) :where([data-icon]) svg{margin-left:var(--toast-svg-margin-start);margin-right:var(--toast-svg-margin-end)}:where([data-sonner-toast]) :where([data-content]){display:flex;flex-direction:column;gap:2px}[data-sonner-toast][data-styled=true] [data-button]{border-radius:4px;padding-left:8px;padding-right:8px;height:24px;font-size:12px;color:var(--normal-bg);background:var(--normal-text);margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end);border:none;cursor:pointer;outline:none;display:flex;align-items:center;flex-shrink:0;transition:opacity .4s,box-shadow .2s}:where([data-sonner-toast]) :where([data-button]):focus-visible{box-shadow:0 0 0 2px #0006}:where([data-sonner-toast]) :where([data-button]):first-of-type{margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end)}:where([data-sonner-toast]) :where([data-cancel]){color:var(--normal-text);background:rgba(0,0,0,.08)}:where([data-sonner-toast][data-theme="dark"]) :where([data-cancel]){background:rgba(255,255,255,.3)}:where([data-sonner-toast]) :where([data-close-button]){position:absolute;left:var(--toast-close-button-start);right:var(--toast-close-button-end);top:0;height:20px;width:20px;display:flex;justify-content:center;align-items:center;padding:0;color:var(--gray12);border:1px solid var(--gray4);transform:var(--toast-close-button-transform);border-radius:50%;cursor:pointer;z-index:1;transition:opacity .1s,background .2s,border-color .2s}[data-sonner-toast] [data-close-button]{background:var(--gray1)}:where([data-sonner-toast]) :where([data-close-button]):focus-visible{box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}:where([data-sonner-toast]) :where([data-disabled="true"]){cursor:not-allowed}:where([data-sonner-toast]):hover :where([data-close-button]):hover{background:var(--gray2);border-color:var(--gray5)}:where([data-sonner-toast][data-swiping="true"]):before{content:"";position:absolute;left:-50%;right:-50%;height:100%;z-index:-1}:where([data-sonner-toast][data-y-position="top"][data-swiping="true"]):before{bottom:50%;transform:scaleY(3) translateY(50%)}:where([data-sonner-toast][data-y-position="bottom"][data-swiping="true"]):before{top:50%;transform:scaleY(3) translateY(-50%)}:where([data-sonner-toast][data-swiping="false"][data-removed="true"]):before{content:"";position:absolute;inset:0;transform:scaleY(2)}:where([data-sonner-toast]):after{content:"";position:absolute;left:0;height:calc(var(--gap) + 1px);bottom:100%;width:100%}:where([data-sonner-toast][data-mounted="true"]){--y: translateY(0);opacity:1}:where([data-sonner-toast][data-expanded="false"][data-front="false"]){--scale: var(--toasts-before) * .05 + 1;--y: translateY(calc(var(--lift-amount) * var(--toasts-before))) scale(calc(-1 * var(--scale)));height:var(--front-toast-height)}:where([data-sonner-toast])>*{transition:opacity .4s}:where([data-sonner-toast][data-expanded="false"][data-front="false"][data-styled="true"])>*{opacity:0}:where([data-sonner-toast][data-visible="false"]){opacity:0;pointer-events:none}:where([data-sonner-toast][data-mounted="true"][data-expanded="true"]){--y: translateY(calc(var(--lift) * var(--offset)));height:var(--initial-height)}:where([data-sonner-toast][data-removed="true"][data-front="true"][data-swipe-out="false"]){--y: translateY(calc(var(--lift) * -100%));opacity:0}:where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="true"]){--y: translateY(calc(var(--lift) * var(--offset) + var(--lift) * -100%));opacity:0}:where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="false"]){--y: translateY(40%);opacity:0;transition:transform .5s,opacity .2s}:where([data-sonner-toast][data-removed="true"][data-front="false"]):before{height:calc(var(--initial-height) + 20%)}[data-sonner-toast][data-swiping=true]{transform:var(--y) translateY(var(--swipe-amount-y, 0px)) translate(var(--swipe-amount-x, 0px));transition:none}[data-sonner-toast][data-swiped=true]{user-select:none}[data-sonner-toast][data-swipe-out=true][data-y-position=bottom],[data-sonner-toast][data-swipe-out=true][data-y-position=top]{animation-duration:.2s;animation-timing-function:ease-out;animation-fill-mode:forwards}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=left]{animation-name:swipe-out-left}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=right]{animation-name:swipe-out-right}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=up]{animation-name:swipe-out-up}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=down]{animation-name:swipe-out-down}@keyframes swipe-out-left{0%{transform:var(--y) translate(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translate(calc(var(--swipe-amount-x) - 100%));opacity:0}}@keyframes swipe-out-right{0%{transform:var(--y) translate(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translate(calc(var(--swipe-amount-x) + 100%));opacity:0}}@keyframes swipe-out-up{0%{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) - 100%));opacity:0}}@keyframes swipe-out-down{0%{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) + 100%));opacity:0}}@media (max-width: 600px){[data-sonner-toaster]{position:fixed;right:var(--mobile-offset-right);left:var(--mobile-offset-left);width:100%}[data-sonner-toaster][dir=rtl]{left:calc(var(--mobile-offset-left) * -1)}[data-sonner-toaster] [data-sonner-toast]{left:0;right:0;width:calc(100% - var(--mobile-offset-left) * 2)}[data-sonner-toaster][data-x-position=left]{left:var(--mobile-offset-left)}[data-sonner-toaster][data-y-position=bottom]{bottom:var(--mobile-offset-bottom)}[data-sonner-toaster][data-y-position=top]{top:var(--mobile-offset-top)}[data-sonner-toaster][data-x-position=center]{left:var(--mobile-offset-left);right:var(--mobile-offset-right);transform:none}}[data-sonner-toaster][data-theme=light]{--normal-bg: #fff;--normal-border: var(--gray4);--normal-text: var(--gray12);--success-bg: hsl(143, 85%, 96%);--success-border: hsl(145, 92%, 91%);--success-text: hsl(140, 100%, 27%);--info-bg: hsl(208, 100%, 97%);--info-border: hsl(221, 91%, 91%);--info-text: hsl(210, 92%, 45%);--warning-bg: hsl(49, 100%, 97%);--warning-border: hsl(49, 91%, 91%);--warning-text: hsl(31, 92%, 45%);--error-bg: hsl(359, 100%, 97%);--error-border: hsl(359, 100%, 94%);--error-text: hsl(360, 100%, 45%)}[data-sonner-toaster][data-theme=light] [data-sonner-toast][data-invert=true]{--normal-bg: #000;--normal-border: hsl(0, 0%, 20%);--normal-text: var(--gray1)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast][data-invert=true]{--normal-bg: #fff;--normal-border: var(--gray3);--normal-text: var(--gray12)}[data-sonner-toaster][data-theme=dark]{--normal-bg: #000;--normal-bg-hover: hsl(0, 0%, 12%);--normal-border: hsl(0, 0%, 20%);--normal-border-hover: hsl(0, 0%, 25%);--normal-text: var(--gray1);--success-bg: hsl(150, 100%, 6%);--success-border: hsl(147, 100%, 12%);--success-text: hsl(150, 86%, 65%);--info-bg: hsl(215, 100%, 6%);--info-border: hsl(223, 100%, 12%);--info-text: hsl(216, 87%, 65%);--warning-bg: hsl(64, 100%, 6%);--warning-border: hsl(60, 100%, 12%);--warning-text: hsl(46, 87%, 65%);--error-bg: hsl(358, 76%, 10%);--error-border: hsl(357, 89%, 16%);--error-text: hsl(358, 100%, 81%)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast] [data-close-button]{background:var(--normal-bg);border-color:var(--normal-border);color:var(--normal-text)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast] [data-close-button]:hover{background:var(--normal-bg-hover);border-color:var(--normal-border-hover)}[data-rich-colors=true][data-sonner-toast][data-type=success],[data-rich-colors=true][data-sonner-toast][data-type=success] [data-close-button]{background:var(--success-bg);border-color:var(--success-border);color:var(--success-text)}[data-rich-colors=true][data-sonner-toast][data-type=info],[data-rich-colors=true][data-sonner-toast][data-type=info] [data-close-button]{background:var(--info-bg);border-color:var(--info-border);color:var(--info-text)}[data-rich-colors=true][data-sonner-toast][data-type=warning],[data-rich-colors=true][data-sonner-toast][data-type=warning] [data-close-button]{background:var(--warning-bg);border-color:var(--warning-border);color:var(--warning-text)}[data-rich-colors=true][data-sonner-toast][data-type=error],[data-rich-colors=true][data-sonner-toast][data-type=error] [data-close-button]{background:var(--error-bg);border-color:var(--error-border);color:var(--error-text)}.sonner-loading-wrapper{--size: 16px;height:var(--size);width:var(--size);position:absolute;inset:0;z-index:10}.sonner-loading-wrapper[data-visible=false]{transform-origin:center;animation:sonner-fade-out .2s ease forwards}.sonner-spinner{position:relative;top:50%;left:50%;height:var(--size);width:var(--size)}.sonner-loading-bar{animation:sonner-spin 1.2s linear infinite;background:var(--gray11);border-radius:6px;height:8%;left:-10%;position:absolute;top:-3.9%;width:24%}.sonner-loading-bar:nth-child(1){animation-delay:-1.2s;transform:rotate(.0001deg) translate(146%)}.sonner-loading-bar:nth-child(2){animation-delay:-1.1s;transform:rotate(30deg) translate(146%)}.sonner-loading-bar:nth-child(3){animation-delay:-1s;transform:rotate(60deg) translate(146%)}.sonner-loading-bar:nth-child(4){animation-delay:-.9s;transform:rotate(90deg) translate(146%)}.sonner-loading-bar:nth-child(5){animation-delay:-.8s;transform:rotate(120deg) translate(146%)}.sonner-loading-bar:nth-child(6){animation-delay:-.7s;transform:rotate(150deg) translate(146%)}.sonner-loading-bar:nth-child(7){animation-delay:-.6s;transform:rotate(180deg) translate(146%)}.sonner-loading-bar:nth-child(8){animation-delay:-.5s;transform:rotate(210deg) translate(146%)}.sonner-loading-bar:nth-child(9){animation-delay:-.4s;transform:rotate(240deg) translate(146%)}.sonner-loading-bar:nth-child(10){animation-delay:-.3s;transform:rotate(270deg) translate(146%)}.sonner-loading-bar:nth-child(11){animation-delay:-.2s;transform:rotate(300deg) translate(146%)}.sonner-loading-bar:nth-child(12){animation-delay:-.1s;transform:rotate(330deg) translate(146%)}@keyframes sonner-fade-in{0%{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}@keyframes sonner-fade-out{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}@keyframes sonner-spin{0%{opacity:1}to{opacity:.15}}@media (prefers-reduced-motion){[data-sonner-toast],[data-sonner-toast]>*,.sonner-loading-bar{transition:none!important;animation:none!important}}.sonner-loader{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);transform-origin:center;transition:opacity .2s,transform .2s}.sonner-loader[data-visible=false]{opacity:0;transform:scale(.8) translate(-50%,-50%)}
+</style><style>
+ @keyframes factcheck-fade-in {
+ from { opacity: 0; transform: translateY(-10px); }
+ to { opacity: 1; transform: translateY(0); }
+ }
+</style>
+<style>
+/* Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Modern Dark Theme - Deep Space & Electric Blue */
+:root, html, html.dark {
+  --brand: hsl(38, 92%, 55%);
+  --brand-foreground: hsl(38, 92%, 65%);
+  --primary: hsl(38, 92%, 55%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --background: hsl(222, 47%, 5%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(38, 25%, 12%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --accent: hsl(38, 25%, 15%);
+  --accent-foreground: hsl(38, 92%, 65%);
+  --border: hsl(38, 25%, 17%);
+  --ring: hsl(38, 92%, 55%);
+  --card: hsl(222, 47%, 7%);
+  --card-foreground: hsl(210, 40%, 98%);
+}
+
+/* Deep dark background */
+body, main, .bg-background {
+  background: linear-gradient(180deg, hsl(222, 47%, 5%) 0%, hsl(222, 47%, 3%) 100%) !important;
+  color: hsl(210, 40%, 98%) !important;
+}
+
+/* Text colors */
+.text-foreground, h1, h2, h3, h4, h5, h6 {
+  color: hsl(210, 40%, 98%) !important;
+}
+
+.text-muted-foreground {
+  color: hsl(215, 20%, 65%) !important;
+}
+
+/* Electric blue buttons */
+.bg-primary {
+  background: linear-gradient(135deg, hsl(38, 92%, 55%) 0%, hsl(38, 92%, 45%) 100%) !important;
+  color: white !important;
+  box-shadow: 0 4px 20px hsla(38, 92%, 55%, 0.4), 0 0 40px hsla(38, 92%, 55%, 0.15) !important;
+  border: none !important;
+}
+
+.bg-primary:hover {
+  background: linear-gradient(135deg, hsl(38, 92%, 60%) 0%, hsl(38, 92%, 50%) 100%) !important;
+  box-shadow: 0 6px 25px hsla(38, 92%, 55%, 0.5), 0 0 50px hsla(38, 92%, 55%, 0.2) !important;
+  transform: translateY(-1px);
+}
+
+/* Dark glass card styling */
+.glass-1, .glass-2, .glass-3, .glass-4, .glass-5 {
+  background: linear-gradient(135deg, hsla(222, 47%, 10%, 0.8) 0%, hsla(222, 47%, 7%, 0.9) 100%) !important;
+  border: 1px solid hsla(38, 92%, 55%, 0.1) !important;
+  backdrop-filter: blur(20px) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 hsla(38, 92%, 55%, 0.05) !important;
+}
+
+/* Glow effects */
+.from-brand-foreground\/50 {
+  --tw-gradient-from: hsla(38, 92%, 55%, 0.3) !important;
+}
+
+.from-brand\/30 {
+  --tw-gradient-from: hsla(38, 92%, 55%, 0.2) !important;
+}
+
+/* Blue brand colors */
+.text-brand {
+  color: hsl(38, 92%, 60%) !important;
+}
+
+.bg-brand {
+  background-color: hsl(38, 92%, 55%) !important;
+}
+
+.bg-brand\/5 {
+  background-color: hsla(38, 92%, 55%, 0.08) !important;
+}
+
+.bg-brand\/10 {
+  background-color: hsla(38, 92%, 55%, 0.12) !important;
+}
+
+.border-brand {
+  border-color: hsl(38, 92%, 55%) !important;
+}
+
+.border-brand\/20 {
+  border-color: hsla(38, 92%, 55%, 0.25) !important;
+}
+
+/* Dark shadows with glow */
+.shadow-xl {
+  box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.5), 0 0 30px hsla(38, 92%, 55%, 0.08) !important;
+}
+
+/* Navigation */
+nav[data-slot="navbar"] {
+  background: hsla(222, 47%, 8%, 0.9) !important;
+  border-color: hsla(38, 92%, 55%, 0.15) !important;
+  backdrop-filter: blur(20px) !important;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(180deg, transparent 0%, hsl(222, 47%, 3%) 100%) !important;
+}
+
+/* Header */
+header {
+  background: hsla(222, 47%, 5%, 0.85) !important;
+  backdrop-filter: blur(20px) !important;
+}
+
+/* Cards and tiles */
+[data-slot="tile"] {
+  background: hsla(222, 47%, 8%, 0.8) !important;
+  border: 1px solid hsla(38, 92%, 55%, 0.1) !important;
+}
+
+/* Borders */
+.border-border {
+  border-color: hsl(38, 25%, 17%) !important;
+}
+
+/* Video frame */
+[data-slot="mockup-frame"] {
+  background: hsla(38, 92%, 55%, 0.05) !important;
+  border: 1px solid hsla(38, 92%, 55%, 0.15) !important;
+}
+
+[data-slot="mockup"] {
+  background: hsl(222, 47%, 7%) !important;
+}
+
+/* Sections */
+section[data-slot="section"] {
+  background: transparent !important;
+}
+
+/* Inputs */
+input, textarea {
+  background: hsl(222, 47%, 8%) !important;
+  border-color: hsl(38, 25%, 20%) !important;
+  color: hsl(210, 40%, 98%) !important;
+}
+
+input:focus, textarea:focus {
+  border-color: hsl(38, 92%, 55%) !important;
+  box-shadow: 0 0 0 3px hsla(38, 92%, 55%, 0.2) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(222, 47%, 5%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(38, 25%, 25%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(38, 92%, 45%);
+}
+
+/* Show dark mode elements */
+.dark\:hidden {
+  display: none !important;
+}
+
+.hidden.dark\:block, .dark\:block {
+  display: block !important;
+}
+
+/* Accordion styling */
+[data-slot="accordion-trigger"] {
+  color: hsl(210, 40%, 98%) !important;
+}
+
+/* SVG icons */
+svg {
+  stroke: currentColor;
+}
+
+.text-white svg {
+  stroke: white;
+}
+
+/* Hover states */
+.hover\:bg-accent:hover {
+  background: hsla(38, 92%, 55%, 0.1) !important;
+}
+
+/* Links */
+a {
+  transition: color 0.2s ease;
+}
+
+/* Feature cards hover */
+[data-slot="tile"]:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 0 30px hsla(38, 92%, 55%, 0.1) !important;
+  border-color: hsla(38, 92%, 55%, 0.2) !important;
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+/* Smooth Accordion Animations */
+[data-slot="accordion-content"] {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease;
+  opacity: 0;
+}
+
+[data-slot="accordion-content"][data-state="open"] {
+  max-height: 500px;
+  opacity: 1;
+}
+
+[data-slot="accordion-trigger"] svg {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-slot="accordion-trigger"][data-state="open"] svg {
+  transform: rotate(180deg);
+}
+
+[data-slot="accordion-item"] {
+  transition: background-color 0.4s ease;
+}
+
+[data-slot="accordion-trigger"]:hover {
+  color: hsl(38, 92%, 55%) !important;
+  transition: color 0.3s ease;
+}
+
+/* Subtle gradient overlay for depth */
+main::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50vh;
+  background: radial-gradient(ellipse at top, hsla(38, 92%, 55%, 0.03) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+</style>
+</head><body class=""><section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section><next-route-announcer style="position: absolute;"><template shadowrootmode="open"><div aria-live="assertive" id="__next-route-announcer__" role="alert" style="position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;"></div></template></next-route-announcer><div class="factcheck-modal-overlay" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 10000; display: none; align-items: center; justify-content: center; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif;">
+ <div class="factcheck-modal">
+ <div class="factcheck-modal-header">
+ <h3>Fact Check Results</h3>
+ <button class="factcheck-modal-close">×</button>
+ </div>
+ <div class="factcheck-modal-content">
+ <div class="factcheck-loading">
+ <div class="factcheck-spinner"></div>
+ <p>Analyzing claims and retrieving evidence...</p>
+ </div>
+ <div class="factcheck-results" style="display: none;"></div>
+ <div class="factcheck-error" style="display: none;"></div>
+ </div>
+ </div>
+ </div><div id="clerk-components"></div><main class="
+ min-h-screen w-full overflow-hidden bg-background text-foreground
+ "><header class="absolute top-0 z-[60] w-full p-2"><div class="mx-auto max-w-container"><nav data-slot="navbar" class="flex items-center justify-between p-2"><nav data-slot="navbar-left" class="flex items-center justify-start gap-4"><a class="flex items-center gap-2 text-xl font-bold" href="#"><div class="relative flex items-center gap-2 ml-8 mt-4"><img alt="quatarly logo" loading="lazy" width="32" height="32" decoding="async" class="h-8 w-8" src="./logo1.png" style="color: transparent;"><span class="text-xl font-bold text-foreground">quatarly</span></div></a></nav><div class="
+ absolute top-1/2 left-1/2 hidden -translate-x-1/2 -translate-y-1/2
+ lg:flex
+ "><nav data-slot="navbar" class="flex items-center justify-between rounded-xl border border-border bg-background/30 p-1 backdrop-blur-lg dark:border-border/15"><nav aria-label="Main" data-orientation="horizontal" dir="ltr" data-slot="navigation-menu" class="relative z-10 max-w-max flex-1 items-center justify-center hidden lg:flex"><div style="position: relative;"><ul data-orientation="horizontal" data-slot="navigation-menu-list" class="group flex flex-1 list-none items-center justify-center space-x-1" dir="ltr"><li><a class="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-hidden disabled:pointer-events-none disabled:opacity-50 data-active:bg-accent/50 data-[state=open]:bg-accent/50" href="#features" data-radix-collection-item="">Features</a></li><li><a class="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-hidden disabled:pointer-events-none disabled:opacity-50 data-active:bg-accent/50 data-[state=open]:bg-accent/50" href="#faq" data-radix-collection-item="">FAQ</a></li><li><a class="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-hidden disabled:pointer-events-none disabled:opacity-50 data-active:bg-accent/50 data-[state=open]:bg-accent/50" href="contact.html" data-radix-collection-item="">Contact Us</a></li></ul></div><div class="absolute top-full left-0 flex justify-center"></div></nav></nav></div><nav data-slot="navbar-right" class="flex items-center justify-end gap-4"><a data-slot="button" class="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow-sm hover:bg-primary/90 h-9 px-4 py-2 hidden md:block" href="waitlist.html">Get started</a><button data-slot="button" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground size-9 shrink-0 md:hidden" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-«r6»" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu size-5" aria-hidden="true"><path d="M4 12h16"></path><path d="M4 18h16"></path><path d="M4 6h16"></path></svg><span class="sr-only">Toggle navigation menu</span></button></nav></nav></div></header><section data-slot="section" class="bg-background text-foreground px-4 py-12 sm:py-24 md:py-32 overflow-hidden pb-0 sm:pb-0 md:pb-0"><div class="
+ mx-auto flex max-w-container flex-col gap-8 pt-8
+ sm:gap-16
+ "><div class="
+ flex flex-col items-center gap-4 text-center
+ sm:gap-8
+ "><h1 class="
+ relative z-10 inline-block animate-appear bg-linear-to-r
+ from-foreground to-foreground bg-clip-text text-3xl leading-tight
+ font-semibold text-balance text-transparent drop-shadow-2xl
+ sm:text-5xl sm:leading-tight
+ md:text-6xl md:leading-tight
+ dark:to-muted-foreground
+ ">Your AI investment analyst</h1><p class="
+ text-md relative z-10 max-w-[740px] animate-appear font-medium
+ text-balance text-muted-foreground opacity-0 delay-100
+ sm:text-xl
+ ">Deploy intelligent analysts that monitor the market, analyze trends, and deliver crystal-clear insights on what matters to you</p><div class="
+ relative z-10 flex animate-appear justify-center gap-4 opacity-0
+ delay-300
+ "><a href="#" data-slot="button" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow-sm hover:bg-primary/90 h-10 rounded-md px-5">Get started<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></div><div class="relative w-full pt-12"><div data-slot="mockup-frame" class="bg-border/50 flex relative z-10 overflow-hidden rounded-2xl dark:bg-border/10 p-2 animate-appear opacity-0 delay-700"><div data-slot="mockup" class="flex relative z-10 overflow-hidden shadow-2xl border-border/70 dark:border-border/5 dark:border-t-border/15 w-full rounded-xl border-0 bg-background/90"><video src="landing-main.mp4" width="1248" height="765" class="w-full" autoplay loop muted playsinline></video></div></div><div data-slot="glow" class="absolute w-full top-0 animate-appear-zoom opacity-0 delay-1000"><div class="from-brand-foreground/50 to-brand-foreground/0 absolute left-1/2 h-[256px] w-[60%] -translate-x-1/2 scale-[2.5] rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[512px] dark:opacity-100"></div><div class="from-brand/30 to-brand-foreground/0 absolute left-1/2 h-[128px] w-[40%] -translate-x-1/2 scale-200 rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[256px] dark:opacity-100"></div></div></div></div></div></section><section data-slot="section" class="bg-background text-foreground px-4 py-12 sm:py-24 md:py-32" id="features"><div class="
+ mx-auto flex max-w-container flex-col items-center gap-6
+ sm:gap-12
+ "><h2 class="
+ text-center text-3xl font-semibold text-balance
+ sm:text-5xl
+ ">The future of investing starts here</h2><p class="
+ text-md max-w-[840px] text-center font-medium text-balance
+ text-muted-foreground
+ sm:text-xl
+ ">quatarly Analysts provide comprehensive research based on the latest market moves. All analysis is objective and fact-based.</p><div class="grid grid-cols-12 gap-4"><div data-slot="tile" class="glass-1 hover:glass-2 group text-card-foreground relative flex flex-col gap-6 overflow-hidden rounded-xl p-6 shadow-xl transition-all col-span-12 lg:col-span-4"><div data-slot="tile-visual" class="flex grow items-end justify-center"><div class="
+ -mx-32 -my-16
+ lg:my-0
+ "><div data-slot="ripple-illustration" class="relative h-[386px] w-[386px]"><div class="relative z-10 h-full w-full"><div class="
+ relative flex h-full w-full items-center justify-center rounded-full
+ border p-2 transition-all duration-1000 ease-in-out
+ group-hover:scale-[1.01]
+ " style="border-color: color-mix(in oklab, var(--primary) 0%, transparent);"><div class="
+ relative flex h-full w-full items-center justify-center rounded-full
+ border p-2 transition-all duration-1000 ease-in-out
+ group-hover:scale-[1.01]
+ " style="border-color: color-mix(in oklab, var(--primary) 4.166666666666666%, transparent);"><div class="
+ relative flex h-full w-full items-center justify-center rounded-full
+ border p-2 transition-all duration-1000 ease-in-out
+ group-hover:scale-[1.01]
+ " style="border-color: color-mix(in oklab, var(--primary) 8.333333333333332%, transparent);"><div class="
+ relative flex h-full w-full items-center justify-center rounded-full
+ border p-2 transition-all duration-1000 ease-in-out
+ group-hover:scale-[1.01]
+ " style="border-color: color-mix(in oklab, var(--primary) 12.5%, transparent);"><div class="
+ relative flex h-full w-full items-center justify-center rounded-full
+ border p-2 transition-all duration-1000 ease-in-out
+ group-hover:scale-[1.01]
+ " style="border-color: color-mix(in oklab, var(--primary) 16.666666666666664%, transparent);"><div class="
+ relative flex h-full w-full items-center justify-center rounded-full
+ border p-2 transition-all duration-1000 ease-in-out
+ group-hover:scale-[1.01]
+ " style="border-color: color-mix(in oklab, var(--primary) 20.833333333333336%, transparent);"><div class="
+ relative flex h-full w-full items-center justify-center rounded-full
+ border p-2 transition-all duration-1000 ease-in-out
+ group-hover:scale-[1.01]
+ " style="border-color: color-mix(in oklab, var(--primary) 25%, transparent);"><div class="
+ relative flex h-full w-full items-center justify-center rounded-full
+ border p-2 transition-all duration-1000 ease-in-out
+ group-hover:scale-[1.01]
+ " style="border-color: color-mix(in oklab, var(--primary) 29.166666666666668%, transparent);"><div class="
+ relative flex h-full w-full items-center justify-center rounded-full
+ border p-2 transition-all duration-1000 ease-in-out
+ group-hover:scale-[1.01]
+ " style="border-color: color-mix(in oklab, var(--primary) 33.33333333333333%, transparent);"><div class="
+ relative flex h-full w-full items-center justify-center rounded-full
+ border p-2 transition-all duration-1000 ease-in-out
+ group-hover:scale-[1.01]
+ " style="border-color: color-mix(in oklab, var(--primary) 37.5%, transparent);"><div class="
+ relative flex h-full w-full items-center justify-center rounded-full
+ border p-2 transition-all duration-1000 ease-in-out
+ group-hover:scale-[1.01]
+ " style="border-color: color-mix(in oklab, var(--primary) 41.66666666666667%, transparent);"><div class="
+ relative flex h-full w-full items-center justify-center rounded-full
+ border p-2 transition-all duration-1000 ease-in-out
+ group-hover:scale-[1.01]
+ " style="border-color: color-mix(in oklab, var(--primary) 45.83333333333333%, transparent);"><div class="
+ flex h-full w-full items-center justify-center rounded-full
+ "><div class="
+ flex h-full w-full rounded-full bg-linear-to-b
+ from-brand-foreground/5 to-brand-foreground/20 p-2
+ dark:from-brand-foreground/20 dark:to-brand-foreground/0
+ "><div class="
+ flex h-full w-full items-center justify-center rounded-full
+ glass-5 border-brand-foreground/40 p-2.5 shadow-md
+ dark:border-border/10
+ "><div data-slot="beam" class="relative after:content-[&#39;&#39;] after:absolute after:inset-0 after:rounded-full after:scale-200 after:bg-radial after:from-brand/30 after:from-10% after:to-brand/0 after:to-60%"><div class="relative z-10"><div class="relative flex items-center justify-center size-12 text-foreground"><img alt="quatarly" loading="lazy" width="64" height="64" decoding="async" class="h-auto w-full" src="./logo1.png" style="color: transparent;"></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div data-slot="glow" class="absolute w-full top-[50%] opacity-30 transition-all duration-300 group-hover:opacity-40"><div class="from-brand-foreground/50 to-brand-foreground/0 absolute left-1/2 h-[256px] w-[60%] -translate-x-1/2 scale-[2.5] rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[512px] dark:opacity-100 -translate-y-1/2"></div><div class="from-brand/30 to-brand-foreground/0 absolute left-1/2 h-[128px] w-[40%] -translate-x-1/2 scale-200 rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[256px] dark:opacity-100 -translate-y-1/2"></div></div></div></div></div><div data-slot="tile-content" class="flex flex-col gap-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap size-8 stroke-1 text-muted-foreground" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg><h3 data-slot="tile-title" class="text-2xl leading-none font-semibold tracking-tight">Deep Research</h3><div data-slot="tile-description" class="text-md text-muted-foreground flex flex-col gap-2 text-balance"><p>Access market analysis and company research through automated data processing. Data-driven reports delivered to your inbox.</p></div></div></div><div data-slot="tile" class="glass-1 hover:glass-2 group text-card-foreground relative flex flex-col gap-6 overflow-hidden rounded-xl p-6 shadow-xl transition-all col-span-12 md:col-span-6 lg:col-span-4"><div data-slot="tile-visual" class="flex grow items-end justify-center"><div class="
+ w-full
+ sm:p-4
+ md:p-8
+ "><div data-slot="chat-illustration" class="relative flex w-full flex-col gap-4 p-4 text-xs"><div class="flex items-start gap-2"><div class="
+ flex h-6 w-6 items-center justify-center rounded-full bg-muted
+ text-[10px] font-semibold
+ ">You</div><div class="
+ max-w-[240px] rounded-xl rounded-tl-sm glass-4 px-3 py-2
+ text-foreground shadow-md
+ ">What happened to NVDA today?</div></div><div class="flex items-start gap-2"><div class="
+ flex h-6 w-6 items-center justify-center rounded-full bg-brand
+ "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot h-3 w-3 text-white" aria-hidden="true"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg></div><div class="space-y-2"><div class="
+ max-w-[260px] rounded-xl rounded-tl-sm border border-brand/20
+ bg-brand/5 px-3 py-2 text-foreground shadow-md
+ ">NVDA dropped 4.2% today on profit-taking after yesterday's rally. Here's the context:</div><div class="
+ max-w-[260px] rounded-xl border-brand/20 bg-brand/5 px-3 py-2
+ text-foreground shadow-md
+ ">• Stock hit $142 resistance level<br>• Volume 40% above average<br>• Tech sector down broadly (-2.1%)</div><div class="
+ max-w-[260px] rounded-xl border-brand/20 bg-brand/5 px-3 py-2
+ text-foreground shadow-md
+ ">Note: NVDA represents 15% of your current portfolio allocation.</div></div></div><div class="flex items-start gap-2"><div class="
+ flex h-6 w-6 items-center justify-center rounded-full bg-muted
+ text-[10px] font-semibold
+ ">You</div><div class="
+ max-w-[200px] rounded-xl rounded-tl-sm glass-4 px-3 py-2
+ text-foreground shadow-md
+ ">Is this part of a broader trend?</div></div><div class="flex items-start gap-2"><div class="
+ flex h-6 w-6 items-center justify-center rounded-full bg-brand
+ "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot h-3 w-3 text-white" aria-hidden="true"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg></div><div class="
+ flex items-center gap-1 rounded-xl rounded-tl-sm border
+ border-brand/20 bg-brand/5 px-3 py-2
+ "><div class="h-1 w-1 animate-pulse rounded-full bg-brand/60"></div><div class="
+ h-1 w-1 animate-pulse rounded-full bg-brand/60 delay-150
+ "></div><div class="
+ h-1 w-1 animate-pulse rounded-full bg-brand/60 delay-300
+ "></div></div></div><div data-slot="glow" class="absolute w-full top-[50%] scale-x-[1.5] opacity-20 transition-all duration-300"><div class="from-brand-foreground/50 to-brand-foreground/0 absolute left-1/2 h-[256px] w-[60%] -translate-x-1/2 scale-[2.5] rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[512px] dark:opacity-100 -translate-y-1/2"></div><div class="from-brand/30 to-brand-foreground/0 absolute left-1/2 h-[128px] w-[40%] -translate-x-1/2 scale-200 rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[256px] dark:opacity-100 -translate-y-1/2"></div></div></div></div></div><div data-slot="tile-content" class="flex flex-col gap-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square size-8 stroke-1 text-muted-foreground" aria-hidden="true"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path></svg><h3 data-slot="tile-title" class="text-2xl leading-none font-semibold tracking-tight">Conversational Intelligence</h3><div data-slot="tile-description" class="text-md text-muted-foreground flex flex-col gap-2 text-balance"><p>Chat about relevant news, SEC filings, company fundamentals - no terminal required.</p></div></div></div><div data-slot="tile" class="glass-1 hover:glass-2 group text-card-foreground relative flex flex-col gap-6 overflow-hidden rounded-xl p-6 shadow-xl transition-all col-span-12 md:col-span-6 lg:col-span-4"><div data-slot="tile-visual" class="flex grow items-end justify-center"><div class="relative min-h-[240px]"><div data-slot="radar-small-illustration" class="mb-8 flex items-end sm:mb-0 absolute top-1/2 left-1/2 -mt-32 h-[512px] w-[512px] -translate-x-1/2 -translate-y-1/2"><div class="relative flex aspect-1/1 h-full w-full items-end"><div class="relative aspect-1/1 h-full w-full p-6"><div class="
+ absolute top-1/2 left-0 h-[1px] w-full bg-brand-foreground/10
+ " style="transform: rotate(0deg);"></div><div class="
+ absolute top-1/2 left-0 h-[1px] w-full bg-brand-foreground/10
+ " style="transform: rotate(30deg);"></div><div class="
+ absolute top-1/2 left-0 h-[1px] w-full bg-brand-foreground/10
+ " style="transform: rotate(60deg);"></div><div class="
+ absolute top-1/2 left-0 h-[1px] w-full bg-brand-foreground/10
+ " style="transform: rotate(90deg);"></div><div class="
+ absolute top-1/2 left-0 h-[1px] w-full bg-brand-foreground/10
+ " style="transform: rotate(120deg);"></div><div class="
+ absolute top-1/2 left-0 h-[1px] w-full bg-brand-foreground/10
+ " style="transform: rotate(150deg);"></div><div class="
+ absolute top-1/2 left-0 h-[1px] w-full bg-brand-foreground/10
+ " style="transform: rotate(180deg);"></div><div class="
+ absolute top-1/2 left-0 h-[1px] w-full bg-brand-foreground/10
+ " style="transform: rotate(210deg);"></div><div class="
+ absolute top-1/2 left-0 h-[1px] w-full bg-brand-foreground/10
+ " style="transform: rotate(240deg);"></div><div class="
+ absolute top-1/2 left-0 h-[1px] w-full bg-brand-foreground/10
+ " style="transform: rotate(270deg);"></div><div class="
+ absolute top-1/2 left-0 h-[1px] w-full bg-brand-foreground/10
+ " style="transform: rotate(300deg);"></div><div class="
+ absolute top-1/2 left-0 h-[1px] w-full bg-brand-foreground/10
+ " style="transform: rotate(330deg);"></div><div class="
+ relative h-full w-full rounded-full
+ dark:border-background
+ "><div class="
+ absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+ rounded-[100%] border p-4 opacity-40
+ " style="border-color: color-mix(in oklab, var(--brand) 50%, transparent); box-shadow: inset 0px 0px 128px color-mix(in oklab, var(--brand-foreground) 30%, transparent); width: 100%; height: 100%;"></div><div class="
+ absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+ rounded-[100%] border p-4 opacity-40
+ " style="border-color: color-mix(in oklab, var(--brand) 62.5%, transparent); box-shadow: inset 0px 0px 128px color-mix(in oklab, var(--brand-foreground) 42.5%, transparent); width: 80%; height: 80%;"></div><div class="
+ absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+ rounded-[100%] border p-4 opacity-40
+ " style="border-color: color-mix(in oklab, var(--brand) 75%, transparent); box-shadow: inset 0px 0px 128px color-mix(in oklab, var(--brand-foreground) 55%, transparent); width: 60%; height: 60%;"></div><div class="
+ absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+ rounded-[100%] border p-4 opacity-40
+ " style="border-color: color-mix(in oklab, var(--brand) 87.5%, transparent); box-shadow: inset 0px 0px 128px color-mix(in oklab, var(--brand-foreground) 67.5%, transparent); width: 40%; height: 40%;"></div><div class="
+ absolute inset-[0] h-full w-full animate-spin-slow rounded-full
+ opacity-40
+ " style="background: conic-gradient(transparent, transparent, transparent, transparent, var(--brand-foreground));"></div></div></div><div class="
+ absolute top-[20%] right-[20%] size-7 animate-ping rounded-full
+ bg-brand opacity-40 shadow-[0_0_12px_4px_var(--brand-foreground)]
+ dark:opacity-50
+ "></div><div class="
+ absolute top-[20%] right-[20%] flex size-7 items-center justify-center
+ rounded-full bg-white/90
+ dark:bg-white/10
+ "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up size-4 text-foreground" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg></div><div class="
+ absolute top-[20%] left-[20%] size-7 animate-ping rounded-full
+ bg-brand opacity-40 shadow-[0_0_12px_4px_var(--brand-foreground)]
+ dark:opacity-50
+ "></div><div class="
+ absolute top-[20%] left-[20%] flex size-7 items-center justify-center
+ rounded-full bg-white/90
+ dark:bg-white/10
+ "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign size-4 text-foreground" aria-hidden="true"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div><div class="
+ absolute bottom-[20%] left-[30%] size-7 animate-ping rounded-full
+ bg-brand opacity-40 shadow-[0_0_12px_4px_var(--brand-foreground)]
+ dark:opacity-50
+ "></div><div class="
+ absolute bottom-[20%] left-[30%] flex size-7 items-center
+ justify-center rounded-full bg-white/90
+ dark:bg-white/10
+ "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-newspaper size-4 text-foreground" aria-hidden="true"><path d="M15 18h-5"></path><path d="M18 14h-8"></path><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2"></path><rect width="8" height="4" x="10" y="6" rx="1"></rect></svg></div><div class="
+ absolute right-[25%] bottom-[40%] size-7 animate-ping rounded-full
+ bg-brand opacity-40 shadow-[0_0_12px_4px_var(--brand-foreground)]
+ dark:opacity-50
+ "></div><div class="
+ absolute right-[25%] bottom-[40%] flex size-7 items-center
+ justify-center rounded-full bg-white/90
+ dark:bg-white/10
+ "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column size-4 text-foreground" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg></div><div data-slot="glow" class="absolute w-full top-[50%] opacity-20 transition-all duration-300 group-hover:opacity-30"><div class="from-brand-foreground/50 to-brand-foreground/0 absolute left-1/2 h-[256px] w-[60%] -translate-x-1/2 scale-[2.5] rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[512px] dark:opacity-100 -translate-y-1/2"></div><div class="from-brand/30 to-brand-foreground/0 absolute left-1/2 h-[128px] w-[40%] -translate-x-1/2 scale-200 rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[256px] dark:opacity-100 -translate-y-1/2"></div></div></div><div class="
+ absolute top-1/2 left-1/2 flex size-20 -translate-x-1/2 -translate-y-1/2
+ items-center justify-center rounded-full glass-5 border-brand/30 p-2.5
+ shadow-md backdrop-blur-md
+ dark:border-brand/20
+ "><div class="relative flex items-center justify-center size-10"><img alt="quatarly" loading="lazy" width="64" height="64" decoding="async" class="h-auto w-full" src="./logo1.png" style="color: transparent;"></div></div></div></div></div><div data-slot="tile-content" class="flex flex-col gap-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-no-axes-column-increasing size-8 stroke-1 text-muted-foreground" aria-hidden="true"><line x1="12" x2="12" y1="20" y2="10"></line><line x1="18" x2="18" y1="20" y2="4"></line><line x1="6" x2="6" y1="20" y2="16"></line></svg><h3 data-slot="tile-title" class="text-2xl leading-none font-semibold tracking-tight">Market Monitoring</h3><div data-slot="tile-description" class="text-md text-muted-foreground flex flex-col gap-2 text-balance"><p class="max-w-[520px]">quatarly Analysts continuously monitor markets, news, and financial data to provide comprehensive analysis of market conditions and company performance.</p></div></div></div><div data-slot="tile" class="glass-1 hover:glass-2 group text-card-foreground relative flex flex-col gap-6 overflow-hidden rounded-xl p-6 shadow-xl transition-all col-span-12 md:flex-row"><div data-slot="tile-content" class="flex flex-col gap-4 grow basis-0 md:justify-end"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain size-8 stroke-1 text-muted-foreground" aria-hidden="true"><path d="M12 18V5"></path><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"></path><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"></path><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"></path><path d="M18 18a4 4 0 0 0 2-7.464"></path><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"></path><path d="M6 18a4 4 0 0 1-2-7.464"></path><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"></path></svg><h3 data-slot="tile-title" class="text-2xl leading-none font-semibold tracking-tight">Institutional-Grade Analysis</h3><div data-slot="tile-description" class="text-md text-muted-foreground flex flex-col gap-2 text-balance"><p class="
+ max-w-[320px]
+ lg:max-w-[460px]
+ ">Generate reports based on the latest financial data and market analysis, delivered straight to your inbox.</p></div></div><div data-slot="tile-visual" class="flex grow items-end justify-center"><div class="
+ min-h-[240px] grow basis-0
+ sm:p-4
+ md:min-h-[400px] md:py-12
+ lg:px-12
+ "><div data-slot="mockup-responsive-top-illustration" class="h-full w-full"><div class="relative h-full w-full"><div data-slot="mockup-frame" class="bg-border/50 flex z-10 overflow-hidden rounded-2xl dark:bg-border/10 p-2 absolute top-0 right-0 w-full translate-y-0 transition-all duration-1000 ease-in-out group-hover:-translate-y-4 md:right-auto md:left-0 md:min-w-[680px]"><div data-slot="mockup" class="flex relative z-10 overflow-hidden shadow-2xl border border-border/70 dark:border-border/5 dark:border-t-border/15 rounded-md"><video width="1340" height="820" autoplay loop muted playsinline preload="metadata" class="h-auto w-full object-cover object-right"><source src="agent-fast.mp4" type="video/mp4"><source src="agent-fast.webm" type="video/webm"></video></div></div></div></div></div></div></div></div></div></section><div class="mx-auto w-full max-w-container bg-slate-100 dark:bg-slate-800/50 rounded-2xl py-12 px-6"><div class="
+ flex flex-col items-center gap-4 text-center
+ sm:gap-8
+ "><p class="text-2xl font-medium text-muted-foreground">quatarly seamlessly integrates with your favorite brokerage</p><div class="
+ relative w-full overflow-hidden py-6
+ sm:py-8
+ md:py-10
+ "><div class="
+ pointer-events-none absolute inset-y-0 left-0 z-10 w-1/3
+ bg-gradient-to-r from-background to-transparent
+ "></div><div class="
+ pointer-events-none absolute inset-y-0 right-0 z-10 w-1/3
+ bg-gradient-to-l from-background to-transparent
+ "></div><div class="flex flex-col gap-6 sm:gap-8"><div data-slot="marquee" class="group flex gap-8 overflow-hidden flex-row p-0"><div data-slot="marquee-item" class="flex shrink-0 gap-8 animate-marquee" style="animation: marquee 15s linear infinite;"><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Zerodha logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./zerodha.png"></div><span class="text-lg text-white font-medium sm:text-xl">Zerodha</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Groww logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./grow.jpeg"></div><span class="text-lg text-white font-medium sm:text-xl">Groww</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Angel Broking logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./angel broking.jpeg"></div><span class="text-lg text-white font-medium sm:text-xl">Angel Broking</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="ET Money logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./icon-etmoney.png"></div><span class="text-lg text-white font-medium sm:text-xl">ET Money</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="HDFC logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./icon-hdfc.png"></div><span class="text-lg text-white font-medium sm:text-xl">HDFC</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="SBI MF logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./icon-sbimf.png"></div><span class="text-lg text-white font-medium sm:text-xl">SBI MF</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Axis MF logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./icon-axismf.png"></div><span class="text-lg text-white font-medium sm:text-xl">Axis MF</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Zerodha logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./zerodha.png"></div><span class="text-lg text-white font-medium sm:text-xl">Zerodha</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Groww logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./grow.jpeg"></div><span class="text-lg text-white font-medium sm:text-xl">Groww</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Angel Broking logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./angel broking.jpeg"></div><span class="text-lg text-white font-medium sm:text-xl">Angel Broking</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="ET Money logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./icon-etmoney.png"></div><span class="text-lg text-white font-medium sm:text-xl">ET Money</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="HDFC logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./icon-hdfc.png"></div><span class="text-lg text-white font-medium sm:text-xl">HDFC</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="SBI MF logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./icon-sbimf.png"></div><span class="text-lg text-white font-medium sm:text-xl">SBI MF</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Axis MF logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./icon-axismf.png"></div><span class="text-lg text-white font-medium sm:text-xl">Axis MF</span></div></div></div><div data-slot="marquee" class="group flex gap-8 overflow-hidden flex-row p-0"><div data-slot="marquee-item" class="flex shrink-0 gap-8 animate-marquee" style="animation: marquee 22s linear infinite;"><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Nippon logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./icon-nippon.png"></div><span class="text-lg text-white font-medium sm:text-xl">Nippon</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Aditya Birla logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./icon-adityabirla.png"></div><span class="text-lg text-white font-medium sm:text-xl">Aditya Birla</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Dezerv logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./deserv.png"></div><span class="text-lg text-white font-medium sm:text-xl">Dezerv</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Zerodha Fund House logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./icon-zerodha-fund-house.png"></div><span class="text-lg text-white font-medium sm:text-xl">Zerodha Fund House</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Nippon logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./icon-nippon.png"></div><span class="text-lg text-white font-medium sm:text-xl">Nippon</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Aditya Birla logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./icon-adityabirla.png"></div><span class="text-lg text-white font-medium sm:text-xl">Aditya Birla</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Dezerv logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./deserv.png"></div><span class="text-lg text-white font-medium sm:text-xl">Dezerv</span></div><div class="flex items-center gap-4 px-6 transition hover:opacity-100"><div class="relative overflow-hidden rounded-lg w-28 h-28 flex items-center justify-center"><img alt="Zerodha Fund House logo" loading="lazy" width="56" height="56" decoding="async" class="max-w-full max-h-full object-contain" src="./icon-zerodha-fund-house.png"></div><span class="text-lg text-white font-medium sm:text-xl">Zerodha Fund House</span></div></div></div></div></div></div></div></div><section data-slot="section" class="bg-background text-foreground px-4 sm:py-24 md:py-32 py-2"></section><div class="
+ mx-auto max-w-7xl px-4
+ sm:px-6
+ lg:px-8
+ "><div class="mb-8 text-center"><h2 class="
+ text-3xl font-semibold text-balance
+ sm:text-5xl
+ ">What can you build?</h2><p class="
+ mx-auto mt-6 max-w-3xl text-lg text-muted-foreground
+ sm:text-xl
+ ">Watch as quatarly Strategies process real-world market data scenarios with automated analysis.</p></div><div class="mb-8 text-left"><p class="text-lg font-medium text-foreground">Select a use case:</p></div><div class="
+ grid grid-cols-1 gap-8
+ lg:grid-cols-2
+ "><div class="space-y-4"><div role="button" tabindex="0" class="group relative cursor-pointer rounded-xl border p-6 transition-all duration-300 border-brand bg-brand/5 shadow-lg"><div class="flex items-center space-x-4"><div class="rounded-lg p-3 transition-colors bg-brand/10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target size-8 stroke-1 text-brand" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div><div class="flex-1"><h3 class="text-lg font-semibold text-foreground">Watchlist Monitor</h3><p class="text-muted-foreground">Create analysts to monitor and analyze specific stocks with real-time market data and news updates</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right size-5 transition-all duration-300 translate-x-0 text-brand opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></div><div role="button" tabindex="0" class="group relative cursor-pointer rounded-xl border p-6 transition-all duration-300 border-border bg-background hover:border-brand/50 hover:bg-brand/5"><div class="flex items-center space-x-4"><div class="rounded-lg p-3 transition-colors bg-muted group-hover:bg-brand/10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-pie size-8 stroke-1 text-brand" aria-hidden="true"><path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"></path><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path></svg></div><div class="flex-1"><h3 class="text-lg font-semibold text-foreground">Social Media Monitor</h3><p class="text-muted-foreground">Monitor social media content from influential figures for potential market-relevant information and sentiment analysis</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right size-5 transition-all duration-300 -translate-x-2 text-muted-foreground opacity-0 group-hover:translate-x-0 group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></div><div role="button" tabindex="0" class="group relative cursor-pointer rounded-xl border p-6 transition-all duration-300 border-border bg-background hover:border-brand/50 hover:bg-brand/5"><div class="flex items-center space-x-4"><div class="rounded-lg p-3 transition-colors bg-muted group-hover:bg-brand/10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up size-8 stroke-1 text-brand" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg></div><div class="flex-1"><h3 class="text-lg font-semibold text-foreground">Portfolio Monitor</h3><p class="text-muted-foreground">Monitor portfolio composition and track allocation metrics with objective data analysis</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right size-5 transition-all duration-300 -translate-x-2 text-muted-foreground opacity-0 group-hover:translate-x-0 group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></div></div><div class="lg:pl-8"><div class="
+ rounded-xl border border-border bg-background shadow-xl
+ "><div class="
+ flex items-center justify-between border-b border-border px-4
+ py-3
+ "><div class="flex items-center space-x-2"><div class="flex space-x-1.5"><div class="size-3 rounded-full bg-red-500"></div><div class="size-3 rounded-full bg-yellow-500"></div><div class="size-3 rounded-full bg-green-500"></div></div><span class="ml-4 text-sm font-medium text-foreground">Watchlist Monitor Demo</span></div><div class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot size-4 text-brand" aria-hidden="true"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg><span class="text-xs text-muted-foreground">quatarly Analyst</span></div></div><div class="p-6"><div class="mb-4"><p class="text-sm text-muted-foreground">quatarly Analyst monitors Tesla and provides data-driven updates</p></div><div class="min-h-[400px] space-y-4"><div class="animate-appear rounded-lg p-3 text-sm border border-border bg-muted/50 text-muted-foreground" style="animation-delay: 0ms; animation-fill-mode: both;"><div class="flex items-start space-x-2"><div class="flex-1"><div class="mb-1 flex items-center space-x-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell size-3 text-muted-foreground" aria-hidden="true"><path d="M10.268 21a2 2 0 0 0 3.464 0"></path><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path></svg><span class="
+ text-xs font-medium text-muted-foreground
+ ">System</span></div><p class="font-mono text-xs">Agent preferences set: TSLA price alerts, earnings coverage, analyst updates</p></div></div></div><div class="animate-appear rounded-lg p-3 text-sm border border-brand/20 bg-brand/10 text-foreground" style="animation-delay: 0ms; animation-fill-mode: both;"><div class="flex items-start space-x-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot 
+ mt-0.5 size-4 flex-shrink-0 text-brand" aria-hidden="true"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg><div class="flex-1"><div class="
+ mb-1 flex items-center justify-between
+ "><span class="text-xs font-medium text-brand">quatarly Analyst</span><span class="text-xs text-muted-foreground">2m ago</span></div><p class="">Tesla (TSLA) Alert: Stock up 4.2% after Q4 delivery beat. Delivered 484K vehicles vs 473K expected.</p></div></div></div><div class="animate-appear rounded-lg p-3 text-sm border border-brand/20 bg-brand/10 text-foreground" style="animation-delay: 0ms; animation-fill-mode: both;"><div class="flex items-start space-x-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot 
+ mt-0.5 size-4 flex-shrink-0 text-brand" aria-hidden="true"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg><div class="flex-1"><div class="
+ mb-1 flex items-center justify-between
+ "><span class="text-xs font-medium text-brand">quatarly Analyst</span><span class="text-xs text-muted-foreground">1m ago</span></div><p class="">Context: TSLA reported 484K Q4 deliveries vs 473K expected. Previous year Q4 deliveries were 405K. Next earnings call scheduled for January 24th.</p></div></div></div><div class="animate-appear rounded-lg p-3 text-sm ml-12 border border-blue-500/20 bg-blue-500/10 text-foreground" style="animation-delay: 0ms; animation-fill-mode: both;"><div class="flex items-start space-x-2"><div class="
+ mt-0.5 size-4 flex-shrink-0 rounded-full bg-blue-500
+ "></div><div class="flex-1"><div class="
+ mb-1 flex items-center justify-between
+ "><span class="
+ text-xs font-medium text-blue-500
+ ">Customer</span></div><p class="">What are analysts saying about the delivery numbers?</p></div></div></div><div class="animate-appear rounded-lg p-3 text-sm border border-brand/20 bg-brand/10 text-foreground" style="animation-delay: 0ms; animation-fill-mode: both;"><div class="flex items-start space-x-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot 
+ mt-0.5 size-4 flex-shrink-0 text-brand" aria-hidden="true"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg><div class="flex-1"><div class="
+ mb-1 flex items-center justify-between
+ "><span class="text-xs font-medium text-brand">quatarly Analyst</span><span class="text-xs text-muted-foreground">now</span></div><p class="">Recent analyst updates: JPMorgan price target changed to $135 (from $120). Wedbush price target set at $310. Morgan Stanley maintains $200 price target. These are current analyst price targets on record.</p></div></div></div></div></div></div></div></div></div></section><section data-slot="section" class="bg-background text-foreground px-4 sm:py-24 md:py-32 py-2"><div class="
+ mx-auto max-w-7xl px-4
+ sm:px-6
+ lg:px-8
+ "><div class="mb-8 text-center"><h2 class="
+ text-3xl font-semibold text-balance
+ sm:text-5xl
+ ">Let quatarly monitor the market for you</h2><p class="
+ mx-auto mt-6 max-w-3xl text-lg text-muted-foreground
+ sm:text-xl
+ ">Integrate quatarly Analysts into your workflow in seconds.</p></div><div class="mx-auto max-w-4xl"><div class="
+ rounded-xl border border-border bg-background p-8 shadow-xl
+ "><div class="mb-8 flex items-center space-x-2"><div class="flex space-x-1.5"><div class="size-3 rounded-full bg-red-500"></div><div class="size-3 rounded-full bg-yellow-500"></div><div class="size-3 rounded-full bg-green-500"></div></div><span class="ml-4 text-sm font-medium text-foreground">create-strategy.js</span></div><div class="space-y-8"><div class="space-y-2"><label class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-sm font-medium" for="analyst-name">Analyst Name</label><input data-slot="input" class="border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring flex h-10 rounded-md border px-3 py-2 text-sm file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:cursor-not-allowed disabled:opacity-50 w-full" id="analyst-name" placeholder="Enter your strategy name" value="My quatarly Analyst"></div><div class="space-y-4"><div><label class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-sm font-medium">Which stocks do you want to track?</label><p class="text-sm text-muted-foreground">Add stocks, ETFs, or crypto symbols to monitor</p></div><div class="flex flex-wrap gap-2"><div data-slot="badge" class="rounded-full border dark:border-border/20 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 gap-2 border-transparent bg-secondary text-secondary-foreground dark:shadow-sm flex items-center space-x-2 px-3 py-1"><span class="font-mono font-semibold">AAPL</span><span class="text-muted-foreground">Apple Inc.</span><button type="button" class="
+ ml-2
+ hover:text-destructive
+ "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x size-3" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button></div><div data-slot="badge" class="rounded-full border dark:border-border/20 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 gap-2 border-transparent bg-secondary text-secondary-foreground dark:shadow-sm flex items-center space-x-2 px-3 py-1"><span class="font-mono font-semibold">TSLA</span><span class="text-muted-foreground">Tesla Inc.</span><button type="button" class="
+ ml-2
+ hover:text-destructive
+ "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x size-3" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button></div></div><div class="relative"><input data-slot="input" class="border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring flex h-10 rounded-md border px-3 py-2 text-sm file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:cursor-not-allowed disabled:opacity-50 w-full" placeholder="Search for stocks (e.g., AAPL, Tesla, NVDA)" value=""></div></div><div class="space-y-4"><div><label class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-sm font-medium">What do you want your strategy to be?</label><p class="text-sm text-muted-foreground">Select the data points and insights you care about most</p></div><div class="
+ grid grid-cols-1 gap-3
+ sm:grid-cols-2
+ "><div role="button" tabindex="0" class="cursor-pointer rounded-lg border p-4 transition-all duration-200 border-brand bg-brand/5"><div class="flex items-start space-x-3"><div class="rounded-md p-2 transition-colors bg-brand/10 text-brand"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up size-4" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg></div><div class="flex-1"><h4 class="font-medium text-foreground">Price Movements</h4><p class="text-sm text-muted-foreground">Track price changes, technical analysis, and trading volumes</p></div><div class="size-5 rounded border-2 transition-colors border-brand bg-brand"><div class="
+ flex h-full items-center justify-center
+ "><div class="size-2 rounded-full bg-white"></div></div></div></div></div><div role="button" tabindex="0" class="cursor-pointer rounded-lg border p-4 transition-all duration-200 border-brand bg-brand/5"><div class="flex items-start space-x-3"><div class="rounded-md p-2 transition-colors bg-brand/10 text-brand"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-no-axes-column-increasing size-4" aria-hidden="true"><line x1="12" x2="12" y1="20" y2="10"></line><line x1="18" x2="18" y1="20" y2="4"></line><line x1="6" x2="6" y1="20" y2="16"></line></svg></div><div class="flex-1"><h4 class="font-medium text-foreground">Fundamentals</h4><p class="text-sm text-muted-foreground">Monitor earnings, revenue, growth metrics, and financial health</p></div><div class="size-5 rounded border-2 transition-colors border-brand bg-brand"><div class="
+ flex h-full items-center justify-center
+ "><div class="size-2 rounded-full bg-white"></div></div></div></div></div><div role="button" tabindex="0" class="cursor-pointer rounded-lg border p-4 transition-all duration-200 border-brand bg-brand/5"><div class="flex items-start space-x-3"><div class="rounded-md p-2 transition-colors bg-brand/10 text-brand"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-newspaper size-4" aria-hidden="true"><path d="M15 18h-5"></path><path d="M18 14h-8"></path><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2"></path><rect width="8" height="4" x="10" y="6" rx="1"></rect></svg></div><div class="flex-1"><h4 class="font-medium text-foreground">News &amp; Events</h4><p class="text-sm text-muted-foreground">Stay updated on company news, announcements, and market events</p></div><div class="size-5 rounded border-2 transition-colors border-brand bg-brand"><div class="
+ flex h-full items-center justify-center
+ "><div class="size-2 rounded-full bg-white"></div></div></div></div></div><div role="button" tabindex="0" class="cursor-pointer rounded-lg border p-4 transition-all duration-200 border-border bg-background hover:border-brand/50 hover:bg-brand/5"><div class="flex items-start space-x-3"><div class="rounded-md p-2 transition-colors bg-muted text-muted-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search size-4" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></div><div class="flex-1"><h4 class="font-medium text-foreground">Analyst Coverage</h4><p class="text-sm text-muted-foreground">Track analyst ratings, price targets, and recommendation changes</p></div><div class="size-5 rounded border-2 transition-colors border-muted-foreground"></div></div></div></div></div><div class="space-y-2"><label class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-sm font-medium" for="custom-prompt">Additional Instructions (Optional)</label><textarea class="flex rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm min-h-[80px] w-full" id="custom-prompt" placeholder="e.g., Focus on momentum plays, ignore penny stocks, alert me on earnings surprises..."></textarea></div><div class="flex justify-center pt-4"><a href="waitlist.html" data-slot="button" class="inline-flex items-center justify-center whitespace-nowrap transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow-sm hover:bg-primary/90 h-10 rounded-md px-8 py-3 text-lg font-medium"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot mr-2 size-5" aria-hidden="true"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg>Try quatarly for free</a></div></div></div></div></div></section><section data-slot="section" class="bg-background text-foreground px-4 py-12 sm:py-24 md:py-32 w-full overflow-hidden"><div class="
+ mx-auto flex max-w-container flex-col gap-8
+ md:flex-row md:gap-20
+ "><div class="flex flex-col gap-8"><h2 class="
+ max-w-[500px] text-3xl leading-tight font-semibold
+ sm:text-5xl sm:leading-tight
+ ">Comprehensive market coverage</h2><p class="
+ text-md max-w-[540px] font-medium text-pretty text-muted-foreground
+ sm:text-xl
+ ">No more fragmented tools. Stock prices, company fundamentals, earnings reports, all in one place.</p></div><div class="
+ grid grid-cols-2 gap-4
+ md:p-4
+ "><div class="
+ flex flex-col items-start gap-3 rounded-xl glass-3 p-4
+ text-left shadow-xl
+ md:px-8 md:py-6
+ lg:px-12 lg:py-8
+ "><div class="text-sm font-semibold text-muted-foreground">coverage</div><div class="flex items-baseline gap-2"><div class="
+ bg-linear-to-r from-foreground to-foreground bg-clip-text
+ text-4xl font-medium text-transparent
+ drop-shadow-[2px_1px_24px_var(--brand-foreground)]
+ transition-all duration-300
+ sm:text-5xl
+ lg:text-6xl
+ dark:to-brand
+ ">30k+</div></div><div class="
+ text-sm font-semibold text-pretty text-muted-foreground
+ ">stocks, ETFs, and crypto tracked</div></div><div class="
+ flex flex-col items-start gap-3 rounded-xl glass-3 p-4
+ text-left shadow-xl
+ md:px-8 md:py-6
+ lg:px-12 lg:py-8
+ "><div class="text-sm font-semibold text-muted-foreground">integrated</div><div class="flex items-baseline gap-2"><div class="
+ bg-linear-to-r from-foreground to-foreground bg-clip-text
+ text-4xl font-medium text-transparent
+ drop-shadow-[2px_1px_24px_var(--brand-foreground)]
+ transition-all duration-300
+ sm:text-5xl
+ lg:text-6xl
+ dark:to-brand
+ ">20+</div></div><div class="
+ text-sm font-semibold text-pretty text-muted-foreground
+ ">brokerage connections</div></div><div class="
+ flex flex-col items-start gap-3 rounded-xl glass-3 p-4
+ text-left shadow-xl
+ md:px-8 md:py-6
+ lg:px-12 lg:py-8
+ "><div class="flex items-baseline gap-2"><div class="
+ bg-linear-to-r from-foreground to-foreground bg-clip-text
+ text-4xl font-medium text-transparent
+ drop-shadow-[2px_1px_24px_var(--brand-foreground)]
+ transition-all duration-300
+ sm:text-5xl
+ lg:text-6xl
+ dark:to-brand
+ ">24/7</div></div><div class="
+ text-sm font-semibold text-pretty text-muted-foreground
+ ">market monitoring and analysis</div></div><div class="
+ flex flex-col items-start gap-3 rounded-xl glass-3 p-4
+ text-left shadow-xl
+ md:px-8 md:py-6
+ lg:px-12 lg:py-8
+ "><div class="flex items-baseline gap-2"><div class="
+ bg-linear-to-r from-foreground to-foreground bg-clip-text
+ text-4xl font-medium text-transparent
+ drop-shadow-[2px_1px_24px_var(--brand-foreground)]
+ transition-all duration-300
+ sm:text-5xl
+ lg:text-6xl
+ dark:to-brand
+ ">∞</div></div><div class="
+ text-sm font-semibold text-pretty text-muted-foreground
+ ">customization options for your AI analyst</div></div></div></div></section><section data-slot="section" class="bg-background text-foreground px-4 py-12 sm:py-24 md:py-32 relative mb-12 w-full overflow-hidden fade-bottom pb-0 sm:mb-24 sm:pb-0 md:mb-32 md:pb-0"><div class="relative"><div class="
+ mx-auto flex max-w-container flex-col gap-8
+ sm:gap-24
+ "><div class="
+ flex flex-col items-center gap-4 text-center
+ sm:gap-12
+ "><h1 class="
+ relative z-10 inline-block max-w-[920px] bg-linear-to-r
+ from-foreground to-foreground bg-clip-text text-2xl font-semibold
+ text-balance text-transparent drop-shadow-2xl
+ sm:text-4xl sm:leading-tight
+ md:text-5xl md:leading-tight
+ dark:to-muted-foreground
+ ">From market noise to market intelligence</h1><p class="
+ text-md relative z-10 max-w-[620px] font-medium text-balance
+ text-muted-foreground
+ sm:text-xl
+ ">While others give you more data, quatarly gives you insights. Our AI analyst cuts through the noise to surface what matters to you.</p></div><div class="w-full"><div data-slot="rising-large-illustration" class="group relative w-full pt-[50%]"><div class="
+ absolute top-0 left-0 z-10 w-full overflow-hidden rounded-[100%]
+ border-4 border-brand bg-background/50 pt-[100%]
+ shadow-[0px_0px_12px_var(--brand),_0px_0px_64px_var(--brand-foreground),0px_0px_12px_var(--brand)_inset]
+ "><div class="
+ absolute top-0 left-0 h-full w-full rounded-[100%]
+ bg-brand-foreground/50
+ " style="mask-image: radial-gradient(140% 95%, transparent 0%, transparent 35%, black 55%);"></div><div class="
+ absolute top-0 left-0 h-full w-full translate-y-[-1rem]
+ rounded-[100%] bg-brand/50 opacity-80 transition-all duration-1000
+ ease-in-out
+ group-hover:translate-y-0 group-hover:opacity-100
+ " style="mask-image: radial-gradient(140% 110%, transparent 0%, transparent 35%, black 55%);"></div><div class="
+ absolute top-0 left-0 h-full w-full translate-y-[-1rem]
+ rounded-[100%] bg-brand opacity-80 transition-all duration-1000
+ ease-in-out
+ group-hover:translate-y-0 group-hover:opacity-100
+ dark:bg-white
+ " style="mask-image: radial-gradient(140% 120%, transparent 0%, transparent 38%, black 43%);"></div></div><div data-slot="glow" class="absolute w-full top-[50%]"><div class="from-brand-foreground/50 to-brand-foreground/0 absolute left-1/2 h-[256px] w-[60%] -translate-x-1/2 scale-[2.5] rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[512px] dark:opacity-100 -translate-y-1/2"></div><div class="from-brand/30 to-brand-foreground/0 absolute left-1/2 h-[128px] w-[40%] -translate-x-1/2 scale-200 rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[256px] dark:opacity-100 -translate-y-1/2"></div></div></div></div></div></div></section><section data-slot="section" class="bg-background text-foreground px-4 py-12 sm:py-24 md:py-32" id="faq"><div class="
+ mx-auto flex max-w-container flex-col items-center gap-8
+ md:flex-row md:items-start
+ "><h2 class="
+ text-center text-3xl leading-tight font-semibold
+ sm:text-5xl
+ md:text-left md:leading-tight
+ ">Frequently asked questions</h2><div class="w-full max-w-[800px]" data-orientation="vertical" type="single" collapsible="true"><div data-state="closed" data-orientation="vertical" data-slot="accordion-item" class="border-border dark:border-border/15 border-b"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-«ra»" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-«r9»" data-slot="accordion-trigger" class="text-md flex flex-1 items-center justify-between py-4 text-left font-medium transition-all hover:underline [&amp;[data-state=open]&gt;svg]:rotate-180" data-radix-collection-item="">Is quatarly a financial advisor?<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-muted-foreground size-4 shrink-0 transition-transform duration-200"><path d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button></h3><div data-state="closed" id="radix-«ra»" hidden="" role="region" aria-labelledby="radix-«r9»" data-orientation="vertical" data-slot="accordion-content" class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"><div class="pb-4 pt-0 text-muted-foreground">No. quatarly is an AI-driven research tool. quatarly provides objective analysis of publicly available financial information but does not provide investment advice or recommendations. Always consult a licensed financial professional for investment decisions.</div></div></div><div data-state="closed" data-orientation="vertical" data-slot="accordion-item" class="border-border dark:border-border/15 border-b"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-«rc»" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-«rb»" data-slot="accordion-trigger" class="text-md flex flex-1 items-center justify-between py-4 text-left font-medium transition-all hover:underline [&amp;[data-state=open]&gt;svg]:rotate-180" data-radix-collection-item="">Which brokerages does quatarly support?<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-muted-foreground size-4 shrink-0 transition-transform duration-200"><path d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button></h3><div data-state="closed" id="radix-«rc»" hidden="" role="region" aria-labelledby="radix-«rb»" data-orientation="vertical" data-slot="accordion-content" class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"><div class="pb-4 pt-0 text-muted-foreground">We support most major brokerages in India. We're adding new platforms regularly based on user demand.</div></div></div><div data-state="closed" data-orientation="vertical" data-slot="accordion-item" class="border-border dark:border-border/15 border-b"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-«re»" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-«rd»" data-slot="accordion-trigger" class="text-md flex flex-1 items-center justify-between py-4 text-left font-medium transition-all hover:underline [&amp;[data-state=open]&gt;svg]:rotate-180" data-radix-collection-item="">How do you keep my financial data secure?<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-muted-foreground size-4 shrink-0 transition-transform duration-200"><path d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button></h3><div data-state="closed" id="radix-«re»" hidden="" role="region" aria-labelledby="radix-«rd»" data-orientation="vertical" data-slot="accordion-content" class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"><div class="pb-4 pt-0 text-muted-foreground">Bank-grade encryption with read-only access to your accounts. quatarly never stores account credentials and can't execute trades.</div></div></div><div data-state="closed" data-orientation="vertical" data-slot="accordion-item" class="border-border dark:border-border/15 border-b"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-«rg»" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-«rf»" data-slot="accordion-trigger" class="text-md flex flex-1 items-center justify-between py-4 text-left font-medium transition-all hover:underline [&amp;[data-state=open]&gt;svg]:rotate-180" data-radix-collection-item="">How accurate is the data analysis?<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-muted-foreground size-4 shrink-0 transition-transform duration-200"><path d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button></h3><div data-state="closed" id="radix-«rg»" hidden="" role="region" aria-labelledby="radix-«rf»" data-orientation="vertical" data-slot="accordion-content" class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"><div class="pb-4 pt-0 text-muted-foreground">Our platform processes data from established financial databases and market sources. All analysis includes source attribution so you can verify the underlying information.</div></div></div><div data-state="closed" data-orientation="vertical" data-slot="accordion-item" class="border-border dark:border-border/15 border-b"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-«ri»" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-«rh»" data-slot="accordion-trigger" class="text-md flex flex-1 items-center justify-between py-4 text-left font-medium transition-all hover:underline [&amp;[data-state=open]&gt;svg]:rotate-180" data-radix-collection-item="">Can I use quatarly on mobile?<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-muted-foreground size-4 shrink-0 transition-transform duration-200"><path d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button></h3><div data-state="closed" id="radix-«ri»" hidden="" role="region" aria-labelledby="radix-«rh»" data-orientation="vertical" data-slot="accordion-content" class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"><div class="pb-4 pt-0 text-muted-foreground">Yes, our web app works seamlessly on iOS, Android, and desktop. Native mobile apps coming soon.</div></div></div></div></div></section><section data-slot="section" class="bg-background text-foreground px-4 py-12 sm:py-24 md:py-32 group relative overflow-hidden"><div class="
+ relative z-10 mx-auto flex max-w-container flex-col items-center gap-6
+ text-center
+ sm:gap-8
+ "><h2 class="
+ max-w-[640px] text-3xl leading-tight font-semibold
+ sm:text-5xl sm:leading-tight
+ ">Finally, the market intelligence you deserve</h2><div class="flex justify-center gap-4"><a href="waitlist.html" data-slot="button" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow-sm hover:bg-primary/90 h-10 rounded-md px-5">Try quatarly for free</a></div></div><div class="
+ absolute top-0 left-0 h-full w-full translate-y-[1rem] opacity-80
+ transition-all duration-500 ease-in-out
+ group-hover:translate-y-[-2rem] group-hover:opacity-100
+ "><div data-slot="glow" class="absolute w-full bottom-0"><div class="from-brand-foreground/50 to-brand-foreground/0 absolute left-1/2 h-[256px] w-[60%] -translate-x-1/2 scale-[2.5] rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[512px] dark:opacity-100"></div><div class="from-brand/30 to-brand-foreground/0 absolute left-1/2 h-[128px] w-[40%] -translate-x-1/2 scale-200 rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[256px] dark:opacity-100"></div></div></div></section><footer class="w-full bg-background px-4"><div class="mx-auto max-w-container"><div data-slot="footer" class="bg-background text-foreground pt-12 pb-4"><div data-slot="footer-content" class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"><div data-slot="footer-column" class="flex flex-col gap-4 col-span-2 sm:col-span-3 md:col-span-1"><div class="flex items-center gap-2"><div class="relative flex items-center gap-2"><img alt="quatarly logo" loading="lazy" width="32" height="32" decoding="async" class="h-8 w-8" src="./logo1.png" style="color: transparent;"><span class="text-xl font-bold text-foreground">quatarly</span></div></div></div><div data-slot="footer-column" class="flex flex-col gap-4"><h3 class="text-md pt-1 font-semibold">Product</h3><a href="#features" class="text-sm text-muted-foreground">Features</a><a href="#faq" class="text-sm text-muted-foreground">FAQ</a><a href="contact.html" class="text-sm text-muted-foreground">Contact Us</a></div></div><div data-slot="footer-bottom" class="border-border dark:border-border/15 text-muted-foreground mt-8 flex flex-col items-center justify-between gap-4 border-t pt-4 text-xs sm:flex-row"><div>© 2025 quatarly. All rights reserved. Built with ❤️ for retail investors.</div><div class="flex items-center gap-4"><button data-slot="button" class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 gap-1 px-2 py-0 text-xs" type="button" id="radix-«rp»" aria-haspopup="menu" aria-expanded="false" data-state="closed"><span class="capitalize">dark</span><span class="inline"> theme</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-up-down size-3" aria-hidden="true"><path d="m7 15 5 5 5-5"></path><path d="m7 9 5-5 5 5"></path></svg></button></div></div></div></div></footer></main>
+<script>
+// Simple theme toggle
+function toggleTheme() {
+    const html = document.documentElement;
+    if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        html.classList.add('light');
+        html.style.colorScheme = 'light';
+        localStorage.setItem('theme', 'light');
+    } else {
+        html.classList.remove('light');
+        html.classList.add('dark');
+        html.style.colorScheme = 'dark';
+        localStorage.setItem('theme', 'dark');
+    }
+}
+
+// Initialize theme - default to dark
+const savedTheme = localStorage.getItem('theme') || 'dark';
+document.documentElement.classList.remove('dark', 'light');
+document.documentElement.classList.add(savedTheme);
+document.documentElement.style.colorScheme = savedTheme;
+localStorage.setItem('theme', savedTheme);
+
+// FAQ Accordion functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const accordionButtons = document.querySelectorAll('[data-slot="accordion-trigger"]');
+    
+    accordionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const accordionItem = this.closest('[data-slot="accordion-item"]');
+            const content = accordionItem.querySelector('[data-slot="accordion-content"]');
+            const isOpen = this.getAttribute('data-state') === 'open';
+            
+            // Close all other accordions (single mode)
+            accordionButtons.forEach(otherButton => {
+                if (otherButton !== button) {
+                    const otherItem = otherButton.closest('[data-slot="accordion-item"]');
+                    const otherContent = otherItem.querySelector('[data-slot="accordion-content"]');
+                    otherButton.setAttribute('data-state', 'closed');
+                    otherButton.setAttribute('aria-expanded', 'false');
+                    otherItem.setAttribute('data-state', 'closed');
+                    otherContent.setAttribute('data-state', 'closed');
+                    otherContent.setAttribute('hidden', '');
+                }
+            });
+            
+            // Toggle current accordion
+            if (isOpen) {
+                this.setAttribute('data-state', 'closed');
+                this.setAttribute('aria-expanded', 'false');
+                accordionItem.setAttribute('data-state', 'closed');
+                content.setAttribute('data-state', 'closed');
+                content.setAttribute('hidden', '');
+            } else {
+                this.setAttribute('data-state', 'open');
+                this.setAttribute('aria-expanded', 'true');
+                accordionItem.setAttribute('data-state', 'open');
+                content.setAttribute('data-state', 'open');
+                content.removeAttribute('hidden');
+            }
+        });
+    });
+});
+</script>
+</body></html>
