@@ -195,7 +195,7 @@
 
     <div class="form-card">
       <div id="form-view">
-        <form id="contact-form">
+        <form id="contact-form" action="https://formspree.io/f/mqareppn" method="POST">
           <div class="form-group">
             <label for="name">Name <span>*</span></label>
             <input type="text" id="name" name="name" placeholder="Your full name" required>
@@ -238,13 +238,28 @@
     document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
       
-      document.getElementById('form-view').style.display = 'none';
-      document.getElementById('success-view').style.display = 'block';
+      const form = e.target;
+      const formData = new FormData(form);
       
-      console.log('Contact form submission:', {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        message: document.getElementById('message').value
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          document.getElementById('form-view').style.display = 'none';
+          document.getElementById('success-view').style.display = 'block';
+          form.reset();
+        } else {
+          alert('Error sending message. Please try again.');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Error sending message. Please try again.');
       });
     });
   </script>
